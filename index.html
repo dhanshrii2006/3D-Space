@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="solar-canvas"></canvas>
+  <div id="sidebar">
+    <button id="menu-toggle"></button>
+    <ul id="planet-list">
+      <li>Sun</li>
+      <li>Mercury</li>
+      <li>Venus</li>
+      <li>Earth</li>
+      <li>Mars</li>
+      <li>Jupiter</li>
+      <li>Saturn</li>
+      <li>Uranus</li>
+      <li>Neptune</li>
+    </ul>
+    <div id="future-content"></div>
+  </div>
+  <script src="./js/lib/three.min.js"></script>
+  <script src="./js/lib/controls/OrbitControls.js"></script>
+  <script src="./js/lib/tween.umd.js"></script>
+  <script src="./js/scene.js"></script>
+  <script src="./js/solarSystem.js"></script>
+  <script src="./js/controls.js"></script>
+  <script src="./js/ui.js"></script>
+</body>
+</html>
