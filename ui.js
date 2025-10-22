@@ -13,7 +13,7 @@ var planetList = document.getElementById('planet-list');
 planetList.addEventListener('click', function(event) {
   // Find planet mesh from solarSystemObjects array
   var planetName = event.target.textContent;
-  var planetMesh = solarSystemObjects.find(function(planet) {
+  var planetMesh = planetInfo.find(function(planet) {
     return planet.name === planetName;
   });
 

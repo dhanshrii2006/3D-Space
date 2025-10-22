@@ -31,12 +31,3 @@ window.onresize = function() {
   // Update renderer size
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-
-// Animation Loop
-function animate() {
-  requestAnimationFrame(animate);
-  renderer.render(scene, camera);
-}
-
-// Call animate() once at the bottom
-animate();

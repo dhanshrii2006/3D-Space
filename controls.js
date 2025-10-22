@@ -35,10 +35,24 @@ function focusOnPlanet(planetMesh) {
     .start();
 }
 
-// Integration
+// REPLACE the old animate function in controls.js with this one
 function animate() {
   requestAnimationFrame(animate);
+
+  // From solarSystem.js (so planets move)
+  updateSolarSystem();
+
+  // From controls.js (so camera works)
   controls.update();
   TWEEN.update();
+
+  // From scene.js (so it renders)
   renderer.render(scene, camera);
 }
+
+// Add this line at the very end of controls.js to start the loop
+animate();
+
+
+
+
