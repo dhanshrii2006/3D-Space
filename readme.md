@@ -25,3 +25,4 @@
 
 - **dat.gui:** User preferences and settings are managed using dat.gui, a lightweight JavaScript library for creating a graphical user interface. It allows users to customize simulation settings easily.
 
+update
