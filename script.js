@@ -18,7 +18,7 @@ const textureLoader = new THREE.TextureLoader();
 
 //////////////////////////////////////
 //SECTION import all texture
-const getTexture = (name) => textureLoader.load(`./image/${name}`);
+const getTexture = (name) => textureLoader.load(`${name}`);
 const starTexture = getTexture("stars.jpg");
 const sunTexture = getTexture("sun.jpg");
 const mercuryTexture = getTexture("mercury.jpg");
